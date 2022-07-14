@@ -1,0 +1,5 @@
+# Exclude upload folder
+uploads
+
+# Exclude Node Module folder
+node_modules
