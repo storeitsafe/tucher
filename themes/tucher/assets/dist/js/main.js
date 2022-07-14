@@ -8218,7 +8218,6 @@ __webpack_require__.r(__webpack_exports__);
 (function () {
   "use strict";
 
-  // Focus input if Searchform is empty
   [].forEach.call(document.querySelectorAll(".search-form"), (el) => {
     el.addEventListener("submit", function (e) {
       var search = el.querySelector("input");
@@ -8228,8 +8227,6 @@ __webpack_require__.r(__webpack_exports__);
       }
     });
   });
-
-  // Initialize Popovers: https://getbootstrap.com/docs/5.0/components/popovers
   var popoverTriggerList = [].slice.call(
     document.querySelectorAll('[data-bs-toggle="popover"]')
   );

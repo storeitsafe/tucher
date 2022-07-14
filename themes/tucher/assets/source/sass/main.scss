@@ -216,8 +216,6 @@ img {
   }
 }
 
-/* Posts */
-
 .sticky {
   .card {
     background-color: $gray-100;
@@ -283,10 +281,6 @@ img {
   }
 }
 
-/* WordPress Blocks */
-
-// Buttons
-
 .wp-block-button {
   &.is-style-outline {
     .wp-block-button__link {
@@ -313,8 +307,6 @@ img {
   }
 }
 
-// Table
-
 .wp-block-table {
   td,
   th {
@@ -325,8 +317,6 @@ img {
     @extend .table;
   }
 }
-
-// Image, Media and Text
 
 .wp-block-image,
 .wp-block-media-text__media {
