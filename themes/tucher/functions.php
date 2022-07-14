@@ -1,16 +1,4 @@
 <?php
-
-/**
- * Include Theme Customizer.
- *
- * @since v1.0
- */
-$theme_customizer = __DIR__ . '/inc/customizer.php';
-if ( is_readable( $theme_customizer ) ) {
-	require_once $theme_customizer;
-}
-
-
 /**
  * Include Support for wordpress.com-specific functions.
  * 
@@ -464,18 +452,6 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		)
 	);
 }
-
-// Custom Nav Walker: wp_bootstrap_navwalker().
-$custom_walker = __DIR__ . '/inc/wp_bootstrap_navwalker.php';
-if ( is_readable( $custom_walker ) ) {
-	require_once $custom_walker;
-}
-
-$custom_walker_footer = __DIR__ . '/inc/wp_bootstrap_navwalker_footer.php';
-if ( is_readable( $custom_walker_footer ) ) {
-	require_once $custom_walker_footer;
-}
-
 
 /**
  * Loading All CSS Stylesheets and Javascript Files.
