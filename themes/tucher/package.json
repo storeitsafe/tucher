@@ -1,13 +1,13 @@
 {
-  "name": "themes-starter",
-  "version": "3.0.0",
+  "name": "tucher-wordpress-theme",
+  "version": "1.0",
   "license": "GPL-2.0",
-  "description": "A WordPress Starter Theme built with Bootstrap 5.",
-  "homepage": "https://them.es",
-  "author": "them.es",
+  "description": "Tucher theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.",
+  "homepage": "https://www.seasonalcoder.com/tucher",
+  "author": "Seasonal Coder Team",
   "repository": {
     "type": "git",
-    "url": "git://github.com/them-es/themes-starter.git"
+    "url": "https://github.com/storeitsafe/tucher.git"
   },
   "scripts": {
     "watch": "gulp watch"
