@@ -9,6 +9,17 @@ if ( is_readable( $theme_wordpresscom ) ) {
 	require_once $theme_wordpresscom;
 }
 
+/**
+ * Extend theme functionality
+ * 
+ * @since v1.0
+ * 
+ */
+
+$theme_features = __DIR__ . "/inc/functions.php";
+if(is_readable($theme_features)){
+	require $theme_features;
+}
 
 /**
  * Set the content width based on the theme's design and stylesheet.
