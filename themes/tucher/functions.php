@@ -1,5 +1,15 @@
 <?php
 /**
+ * Include Pre-defined Constants.
+ * 
+ * @since v1.0
+ */
+$theme_constants = __DIR__ . '/inc/global/theme-constants.php';
+if ( is_readable( $theme_constants ) ) {
+	require_once $theme_constants;
+}
+
+/**
  * Include Support for wordpress.com-specific functions.
  * 
  * @since v1.0
@@ -16,7 +26,7 @@ if ( is_readable( $theme_wordpresscom ) ) {
  * 
  */
 
-$theme_features = __DIR__ . "/inc/functions.php";
+$theme_features = __DIR__ . "/inc/global/functions.php";
 if(is_readable($theme_features)){
 	require $theme_features;
 }
