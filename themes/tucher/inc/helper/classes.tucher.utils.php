@@ -11,4 +11,12 @@ class utils{
         return self::$instance;
 
     }
+
+    //Dynamically Register menu pages
+    public static function tucher_admin_page( $page_title, $menu_title, $capability, $menu_slug, $callback = '', $icon_url = '', $position = null ){
+
+        $page =  add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $callback, $icon_url, $position );
+
+        return $page;
+    }
 }

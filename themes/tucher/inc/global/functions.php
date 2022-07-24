@@ -1,7 +1,20 @@
 <?php
-// $theme = new options;
-// $administrator = new administrator;
+if(!function_exists('tucher_settings')):
 
-utils::get_instance("options");
-utils::get_instance("administrator");
-utils::get_instance("admin");
+    function tucher_settings(){
+
+        utils::tucher_admin_page(
+
+            "Theme Options", 
+            "Theme Options", 
+            "manage_options", 
+            "tucher_settings", 
+            array(new theme_settings, "initalize"), 
+            "dashicons-art",
+            "62"
+        );
+
+    }
+
+endif;
+add_action( 'admin_menu', 'tucher_settings', '0', '' );
